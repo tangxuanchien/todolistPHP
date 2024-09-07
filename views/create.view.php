@@ -2,7 +2,7 @@
 session_start();
 require '../function.php';
 
-$title = "Việc cần làm";
+$title = "Thêm mới việc làm";
 $banner = "Thêm mới việc làm";
 $login = check_login($_SESSION['name']);
 if(!isset($_SESSION['textbody'])){

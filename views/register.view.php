@@ -26,7 +26,7 @@ require '../partials/banner.php';
     </div>
     <div class="mb-3">
         <label class="form-label">Số điện thoại</label>
-        <input type="number" class="form-control" placeholder="09xx-xxx-xxx" name='phone' value="">
+        <input type="text" class="form-control" placeholder="09xx-xxx-xxx" name='phone' value="">
     </div>
     <div class="mb-3">
         <label  class="form-label">Mật khẩu</label>

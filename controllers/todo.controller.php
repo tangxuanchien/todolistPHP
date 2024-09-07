@@ -8,9 +8,12 @@ $todo = $db->query("SELECT * FROM `notes` WHERE id = $id")->fetch(PDO::FETCH_ASS
 <div>
     <?= $todo['body']; ?></br>
     <div class="mt-5">
-        <a href="/ToDoApp/views/update.view.php?id=<?= $todo['id'] ?>">CẬP NHẬT VIỆC LÀM</a></br>
+        <a href="/ToDoApp/views/update.view.php?id=<?= $todo['id'] ?>">Cập nhật việc làm</a></br>
     </div>
     <div class="mt-2">
-        <a href="/ToDoApp/controllers/delete.controller.php?id=<?= $todo['id'] ?>" onclick="return  confirm('Bạn chắc chắn muốn xóa không ?')" class="text-danger">XÓA VIỆC LÀM</a>
+        <a href="/ToDoApp/controllers/delete.controller.php?id=<?= $todo['id'] ?>" onclick="return  confirm('Bạn chắc chắn muốn xóa không ?')" class="text-danger">Xóa việc làm</a>
+    </div>
+    <div class="mt-2">
+        <a href="/ToDoApp/" class="text-dark">Quay lại</a>
     </div>
 </div>

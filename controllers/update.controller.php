@@ -1,5 +1,5 @@
 <?php
-$body = $_POST['body'];
+$body = trim($_POST['body']);
 $id = $_GET['id'];
 require '../models/Database.php';
 $db = new Database();

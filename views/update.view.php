@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$title = "Việc cần làm";
+$title = "Cập nhật việc làm";
 $banner = "Cập nhật việc làm";
 $login = 'Chào, '.$_SESSION['name'];
 

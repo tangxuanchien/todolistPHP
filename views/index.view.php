@@ -1,7 +1,5 @@
 <?php
 session_start();
-// require 'function.php';
-
 
 $title = "Trang chủ";
 if (isset($_SESSION['id'])) {

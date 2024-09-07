@@ -1,12 +1,11 @@
 <?php
     session_start();
     require '../models/Database.php';
-    $body = $_POST['body'];
+    $body = trim($_POST['body']);
     $id = $_SESSION['id'];
     require '../function.php';
-    // dd($body);
     
-    if($body === ""){
+    if(empty($body)){
         $_SESSION['textbody'] = 'Bạn đang để trống, vui lòng nhập nội dung';
         header('Location: /ToDoApp/views/create.view.php');
     }
